@@ -1,0 +1,358 @@
+<!--
+Author: Yuki Yuan
+License: Creative Commons Attribution 3.0 Unported + MIT(3rd party JS/CSS)
+License URL: http://creativecommons.org/licenses/by/3.0/
+Layout:W3layouts
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yuki Yuan - A Graphic and Industry Designer</title>
+	<link href="css/mystyle.css" rel="stylesheet" type="text/css" media="all" />
+	<!--css--hover-->
+	<link href="css/hover.css" rel="stylesheet" media="all">
+	<link href="css/font-awesome.min.css" rel="stylesheet" media="all">
+	<!--fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- js -->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+</head>
+<body>
+<!-- banner -->
+<div class="banner-wrapper" id="home">
+	<div class="banner-words">
+		<p>H&nbspE&nbspL&nbspL&nbspO, &nbspI' &nbspM </p>
+		<span>Y&nbspU&nbspK&nbspI &nbspy&nbspu&nbspa&nbspn</span>
+	</div>
+</div>
+<!-- //banner-->
+<!-- navigation -->
+<div class="navigation">
+	<div class="container">
+		<div class="fixed-header">
+			<!--div class="nav-left">
+				<a href="#"><img src="icons/logo.png" alt="" /></a>
+			</div-->
+			<div class="nav-right">
+				<!--span class="menu"><img src="images/menu.png" alt="" /></span-->
+					<nav class="cl-effect-1">
+						<ul class="nav1">
+							<li><a class="hvr-underline-from-center scroll" href="#home">Home</a></li>
+							<li><a class="hvr-underline-from-center scroll" href="#works">Works</a></li>
+							<li><a class="hvr-underline-from-center scroll" href="#about">About Me</a></li>
+							<li><a class="hvr-underline-from-center scroll" href="#skills">Skill</a></li>
+							<li><a class="hvr-underline-from-center" href="./pdfs/yunqiyuan_CV.pdf" target="_blank">Resume</a></li>
+						</ul>
+					</nav>
+					
+					<!-- script for menu -->
+					<script> 
+						$( "span.menu" ).click(function() {
+						$( "ul.nav1" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+					<!-- //script for menu -->
+					<!-- script-for sticky-nav -->
+						<script>
+						$(document).ready(function() {
+							 var navoffeset=$(".navigation").offset().top;
+							 $(window).scroll(function(){
+								var scrollpos=$(window).scrollTop(); 
+								if(scrollpos >=navoffeset){
+									$(".navigation").addClass("fixed");
+								}else{
+									$(".navigation").removeClass("fixed");
+								}
+							 });
+							 
+						});
+						</script>
+					<!-- /script-for sticky-nav -->
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //navigation -->
+<!-- portfolio -->
+<div class="portfolio-wrapper" id="works">
+	<div class="container">
+		<div class="portfolio-col" style="margin-right: 2%;">
+			<div class="portfolio-container" style="margin-bottom:35px;">
+				<span class="index">M&nbspY &nbsp&nbspW&nbspO&nbspR&nbspK&nbspS </span>
+				<p class="item">
+				<br>
+				<br> PRODUCT
+				<br><br> GRAPHIC
+				<br><br> HANDCRAFT
+				<br><br> UI/UX
+				</p>
+			</div>
+			<div class="hvr-grow-shadow fade-in portfolio-container">
+				<a href="pdfs/252.pdf" target="_blank">
+				<div class="portfolio-item-wrapper">		
+					<img class="img-responsive" src="images/wood_toy.jpg" alt=""  />
+					<div class="portfolio-item-desc">Handcraft</div>					
+				</div>
+				</a>
+			</div>
+			<div class="hvr-grow-shadow fade-in portfolio-container">
+				<a href="pdfs/252.pdf" target="_blank">
+				<div class="portfolio-item-wrapper">		
+					<img class="img-responsive" src="images/graphic1.jpg" alt=""  />
+					<div class="portfolio-item-desc">Handcraft</div>					
+				</div>
+				</a>
+			</div>
+			<div class="hvr-grow-shadow fade-in portfolio-container">
+				<a href="pdfs/252.pdf" target="_blank">
+				<div class="portfolio-item-wrapper">		
+					<img class="img-responsive" src="images/VI.jpg" alt=""  />
+					<div class="portfolio-item-desc">Handcraft</div>					
+				</div>
+				</a>
+			</div>
+			<div class="hvr-grow-shadow fade-in portfolio-container">
+				<a href="pdfs/252.pdf" target="_blank">
+				<div class="portfolio-item-wrapper">		
+					<img class="img-responsive" src="images/palet.jpg" alt=""  />
+					<div class="portfolio-item-desc">Handcraft</div>					
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="portfolio-col" style="margin-right: 2%;">
+			<div class="hvr-grow-shadow fade-in portfolio-container">
+				<a href="pdfs/252.pdf" target="_blank">
+				<div class="portfolio-item-wrapper">		
+					<img class="img-responsive" src="images/salt_pepper.jpg" alt=""  />
+					<div class="portfolio-item-desc">Handcraft</div>					
+				</div>
+				</a>
+			</div>
+			<div class="hvr-grow-shadow fade-in portfolio-container">
+				<a href="pdfs/252.pdf" target="_blank">
+				<div class="portfolio-item-wrapper">		
+					<img class="img-responsive" src="images/Bella.jpg" alt=""  />
+					<div class="portfolio-item-desc">Handcraft</div>					
+				</div>
+				</a>
+			</div>
+			<div class="hvr-grow-shadow fade-in portfolio-container">
+				<a href="pdfs/252.pdf" target="_blank">
+				<div class="portfolio-item-wrapper">		
+					<img class="img-responsive" src="images/powertool.jpg" alt=""  />
+					<div class="portfolio-item-desc">Handcraft</div>					
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="portfolio-col">
+			<div class="hvr-grow-shadow fade-in portfolio-container">
+				<a href="pdfs/252.pdf" target="_blank">
+				<div class="portfolio-item-wrapper">		
+					<img class="img-responsive" src="images/faucet.jpg" alt=""  />
+					<div class="portfolio-item-desc">Handcraft</div>					
+				</div>
+				</a>
+			</div>
+			<div class="hvr-grow-shadow fade-in portfolio-container">
+				<a href="pdfs/252.pdf" target="_blank">
+				<div class="portfolio-item-wrapper">		
+					<img class="img-responsive" src="images/steammop.jpg" alt=""  />
+					<div class="portfolio-item-desc">Handcraft</div>					
+				</div>
+				</a>
+			</div>
+			<div class="hvr-grow-shadow fade-in portfolio-container">
+				<a href="pdfs/252.pdf" target="_blank">
+				<div class="portfolio-item-wrapper">		
+					<img class="img-responsive" src="images/dyson.jpg" alt=""  />
+					<div class="portfolio-item-desc">Handcraft</div>					
+				</div>
+				</a>
+			</div>
+			<div class="hvr-grow-shadow fade-in portfolio-container">
+				<a href="pdfs/252.pdf" target="_blank">
+				<div class="portfolio-item-wrapper">		
+					<img class="img-responsive" src="images/wire_mask.jpg" alt=""  />
+					<div class="portfolio-item-desc">Handcraft</div>					
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //portfolio -->
+<!-- about -->
+<div class="about-wrapper" id="about">
+	<div class="container">
+		<div class="about-header">
+			<div class="h-center">
+				<span class="index">A&nbspB&nbspO&nbspU&nbspT &nbsp M&nbspE</p>
+			</div>
+		</div>
+		<div id="edu" class="about-row">
+			<div class="about-item-image">
+				<img src="./images/edu-bkg.jpg"/>
+			</div>
+			<div class="about-item-desc">
+				<div>
+					<p class="short">
+					<span class="desc-header">Education Background</span>
+					<br>
+					<br>July, 2010 ~  Jun, 2014   
+					<br><span class="title">The Ohio State University</span>
+					<br><span class="title">Bachelor Degree of Science, Industrial Design Major</span>
+					<br> 
+					(GPA 3.84/4.00) 
+					</p>
+					
+					<p class="detail">
+					<br> - International Undergraduate Scholarship (2010 ~2014 )
+					<br> - Dean's list (2010 ~ 2014)
+					<br> - Gim and Jan Jay Scholarship (2013 fall semester)
+					</p>
+					<span class="click-span hvr-shutter-out-horizontal" status="hidden" data-src="edu">Learn More</span>
+				</div>
+			</div>
+		</div>
+		<div id="awards" class="about-row">
+			<div class="about-item-desc">
+				<div>
+					<p class="short left-align">
+					<span class="desc-header">Design Awards</span>
+					<br>
+					<br><span class="title">The 3rd Place of 2013 IHA Student<br> Design Competition</span> 
+					<br>
+					<br><span class="title">Student Honor of Core77 Design Awards<br> 2013 - Soft Goods</span> 
+					</p>
+					
+					<p class="detail left-align">
+					<a class="hvr-icon-back" href="http://www.homeworldbusiness.com/iha-announces-student-design-competition-winners/">&nbspIHA News on Home-World-Business</a>
+					<br><a class="hvr-icon-back" href="http://design.osu.edu/news/industrial-design-students-win-2013-housewares-awards/">&nbspOHIO State Univ.  News</a>
+					<br><a class="hvr-icon-back" href="http://www.core77.com/posts/24518/international-home-housewares-show-2013-winners-of-the-20th-annual-student-design-competition-24518/">&nbspCore 77 Design Award News</a> 
+					</p>
+					<span class="click-span hvr-shutter-out-horizontal" status="hidden" data-src="awards">Learn More</span>
+				</div>
+			</div>
+			<div class="about-item-image">
+				<img src="./images/award-bkg.jpg"/>
+			</div>
+		</div>
+		<div id="career" class="about-row">
+			<div class="about-item-image">
+				<img src="./images/career-bkg.jpg"/>
+			</div>
+			<div class="about-item-desc">
+				<p class="short small-padding-top">
+					<span class="desc-header">Working Experience</span>
+					<br>
+					<br>Aug, 2014 ~ Oct, 2014   
+					<br><span class="title">Bantum Design - Industrial Design Intern</span>
+				</p>
+				<p class="detail small-padding-top">
+						 - Responsible for marketing research and competitor analysis
+					<br> - Participate in concept generating process including: sketch, Photoshop rendering and 3D modeling
+				</p>
+				<p class="short small-padding-top">
+					Aug, 2014 ~ Dec, 2015 
+					<br><span class="title">United Imaging - Graphic Design Freelancer</span>
+				</p>
+				<p class="detail small-padding-top">
+					- Quarterly magazine layout design
+				</p>
+				<p class="short small-padding-top">
+					Jan, 2015 ~ Now
+					<br><span class="title">AEG Management Co. - Creative Executive</span>
+				</p>
+				<p class="detail small-padding-top">
+					    - In charge of sales and marketing materials design, provide layout and template design for proposals and client deliverable
+					<br><br>- Develop the internal corporate visual brand identity, with internal promotional materials
+					<br><br>- Actively participate in client presentations, both in discovery meetings, as well as the presentation of finished creative strategies and execution
+				</p>
+				<span class="click-span hvr-shutter-out-horizontal" status="hidden" data-src="career">Learn More</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //about -->
+<!-- skill -->
+<div class="skill-wrapper" id="skills">
+	<div class="container">
+		<div class="skill-header">
+			<span class="index">S&nbspK&nbspI&nbspL&nbspL&nbspS </span>
+		</div>
+		<div class="skill-item-wrapper">
+			<div style="overflow:hidden; display:inline-block">
+				<div class="skill-item">
+					<img src="./icons/ps.png" />
+				</div>
+				<div class="skill-item">
+					<img src="./icons/ai.png" />
+				</div>
+				<div class="skill-item">
+					<img src="./icons/id.png" />
+				</div>
+				<div class="skill-item">
+					<img src="./icons/pr.png" />
+				</div>
+				<div class="skill-item">
+					<img src="./icons/fl.png" />
+				</div>
+				<div class="skill-item">
+					<img src="./icons/html5.png" />
+				</div>
+				<div class="skill-item">
+					<img src="./icons/css3.png" />
+				</div>
+				<div class="skill-item">
+					<img src="./icons/solidworks.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //skill -->
+<script>
+$(document).ready(function(){
+	$(".about-item-desc span.click-span").click(function(){
+		if($(this).attr('status') == 'hidden')
+		{
+			$("#" + $(this).attr('data-src') + ' p.detail').show(200)
+			$(this).attr('status','displayed')
+			$("#" + $(this).attr('data-src') + ' span.click-span').html('Got It')
+			//$("#" + $(this).attr('data-src') + ' span.click-span').css('color','white')
+			//$("#" + $(this).attr('data-src') + ' span.click-span').css('background-color','black')
+		}
+		else
+		{
+			$("#" + $(this).attr('data-src') + ' p.detail').hide(200)
+			$(this).attr('status', 'hidden')
+			$("#" + $(this).attr('data-src') + ' span.click-span').html('Learn More')
+			//$("#" + $(this).attr('data-src') + ' span.click-span').css('color','black')
+			//$("#" + $(this).attr('data-src') + ' span.click-span').css('background-color','white')
+		}
+	})
+});
+</script>
+</body>
+</html>
