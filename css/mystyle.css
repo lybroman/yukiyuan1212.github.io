@@ -29,13 +29,13 @@ src: url(../fonts/HelveticaNeueLTPro-Lt.otf);
 @font-face
 {
 font-family: Gothic;
-src: url(../fonts/GOTHIC.ttf);
+src: url(../fonts/GOTHIC.TTF);
 }
 
 @font-face
 {
 font-family: Gothic-Bold;
-src: url(../fonts/GOTHICB.ttf);
+src: url(../fonts/GOTHICB.TTF);
 }
 
 @font-face
