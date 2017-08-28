@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> Conference Time Zone</title>
+	<link href="./map.css" type="text/css" rel="stylesheet">
+	<link href="./styles.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="./moment.js"></script>
+	<script type="text/javascript" src="./moment-timezone.js"></script>
+	<script>
+	
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div style="display:inline-block; width:25%; vertical-align:top; margin-top:7%">
+			<input type="text" name="country" id="autocomplete"/>
+			<Button id="add"> Add a City</Button>
+			<input id="date-selection" type="datetime-local"/>
+			<div id="country-list">
+				<span>Asia/Shanghai</span><span> : </span><span data-src="Asia/Shanghai"></span>
+			</div>
+		</div>
+		<div style="display:inline-block; width:70%; vertical-align:top">
+			<div class="map">
+				<h3 class="map-label">
+				<span class="map-label-name"></span>
+				<span class="map-label-time"></span>
+				</h3>
+				<div class="map-wrap">
+					<div class="map-inset">
+						<div class="map-axis-x"></div>
+						<div class="map-axis-y"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	
+	<script type="text/javascript" src="./jquery.min.js"></script>
+	<script type="text/javascript" src="./jquery.autocomplete.js"></script>
+	<script type="text/javascript" src="./map.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
+	<script>
+		$("span[data-src='Asia/Shanghai']").html(moment().format())
+	</script>
+
+</body>
+</html>

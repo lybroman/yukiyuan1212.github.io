@@ -236,6 +236,7 @@ padding-top:10px;
 
 .portfolio-item-desc
 {	
+	font-family:'Gothic';
 	width:100px;
 	text-align:center;
 	height:20px;
@@ -247,6 +248,9 @@ padding-top:10px;
 	right: 0;
 	opacity:0;
 }
+
+.font-black{ color:black}
+.font-white{ color:white}
 .fade-in:hover .portfolio-item-wrapper .portfolio-item-desc
 {
 	transition: .5s all;
@@ -255,6 +259,7 @@ padding-top:10px;
 	-ms-transition: .5s all;
 	-moz-transition: .5s all;
 	opacity:1.0;
+	font-weight:bold;
 }
 
 span.index
@@ -264,11 +269,28 @@ span.index
 	font-size:38px;
 }
 
+span.all:hover
+{
+	cursor:pointer;
+}
+
 p.item
 {
 	font-family:'Gothic';
 	font-size:16px;
+	text-transform:uppercase;
 }
+
+a.tag
+{
+	color:black;
+}
+
+a.tag:hover{
+	color:black;
+	cursor:pointer;
+}
+
 /*-- //portfolio --*/
 /*-- about --*/
 .about-wrapper
